@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <script>
+    const path = "/users/download/index.html"
+
+    function isHtml(path) {
+      check = path.slice(-4);
+      if (check == 'html') {
+        result = 'true';
+      } else {
+        result = 'false';
+      }
+      alert(result);
+    }
+    console.log(isHtml(path))
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.button {
+  font-size: rem(19px);
+  font-weight: bold;
+  padding: rem(18px) rem(35px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: 1;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  outline: none;
+
+  @include phones {
+    font-size: rem(15px);
+    padding: rem(15px) rem(30px);
+  }
+}
+
+.button--theme--white {
+  background: #fff;
+  color: $darkGreen;
+}
+
+.button--theme--white:hover {
+  background: $darkGreen;
+  color: #fff;
+}
+
+.button--theme--green {
+  background: $darkGreen;
+  color: #fff;
+}
+
+.button--theme--green:hover {
+  background: #fff;
+  color: $darkGreen;
+}
+
+.button--theme--transparent {
+  background: transparent;
+  color: #000;
+  text-transform: none;
+}
+
+.button--theme--transparent:hover {
+  color: $darkGreen;
+}
