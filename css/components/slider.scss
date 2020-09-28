@@ -1,13 +1,13 @@
-.slider{
+.slider-section{
   background: #F8FAF9;
 }
 
-.slider__products {
+.slider-section__products {
   display: flex;
   justify-content: space-between;
 }
 
-.slider__button--back, .slider__button--next {
+.products-slider__arrow--back, .products-slider__arrow--next {
   display: flex;
   align-items: center;
 }
@@ -97,4 +97,15 @@
 
 .slider__click {
   display: inline-block;
+}
+
+.products-slider {
+position: relative;
+
+  .bx-wrapper {
+    -webkit-box-shadow: 0 !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    background: transparent !important;
+  }
 }
