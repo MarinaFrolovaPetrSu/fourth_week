@@ -4,7 +4,7 @@ const findBlockByAlias = (alias) => {
   });
 };
 
-$(".reviews-switcher__link").click(e => {
+$(".reviews-switcher__link").click((e) => {
   e.preventDefault();
 
   const $this = $(e.currentTarget);
@@ -14,6 +14,4 @@ $(".reviews-switcher__link").click(e => {
 
   itemToShow.addClass("active").siblings().removeClass("active");
   curItem.addClass("active").siblings().removeClass("active");
-})
-
-
+});
