@@ -40,7 +40,6 @@
 
 .form__input {
   width: 100%;
-  border: none;
   border-radius: 5px;
   padding: rem(18px) rem(11px);
   border: solid rem(3px) transparent;
@@ -85,4 +84,12 @@
     display: flex;
     justify-content: center;
   }
+}
+
+.form__input.input-error {
+  background-color: hotpink;
+}
+
+.input-error {
+  background-color: hotpink;
 }
