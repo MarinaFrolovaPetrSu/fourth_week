@@ -21,6 +21,9 @@
   background-position: center center;
   background-repeat: no-repeat;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .products-menu__content {
@@ -37,6 +40,17 @@
   height: 100%;
   visibility: visible;
   display: flex;
+  &.active {
+    .products-menu__content {
+      width: rem(550px);
+      transition: width 0.4s, color .4s .3s;
+      color: white;
+
+      @include phones {
+        transition: color .4s .3s;
+      }
+    }
+  }
 }
 
 .products-menu-section__title {
@@ -46,3 +60,20 @@
   color: white;
 }
 
+.products-menu__text {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  margin-bottom: rem(20px);
+}
+
+.products-menu__content-text {
+  font-size: rem(14px);
+  padding: rem(60px) rem(30px);
+  width: 100%;
+  line-height: 1.8;
+  position: relative;
+}
