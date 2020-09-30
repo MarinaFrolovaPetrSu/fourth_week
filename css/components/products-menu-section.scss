@@ -1,0 +1,48 @@
+.products-menu-section {
+  background: url("../img/icons/menu-products.svg") 50% no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 1;
+  justify-content: flex-end;
+}
+
+.products-menu__title {
+  position: relative;
+  width: 5rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.products-menu__content {
+  background: rgba(47, 50, 52, 0.93);
+  width: 0;
+  height: 100%;
+  position: relative; 
+  overflow: hidden;
+  transition: width 0.4s;
+  color: rgba(255, 255, 255, 0);
+}
+
+.products-menu__item {
+  height: 100%;
+  visibility: visible;
+  display: flex;
+}
+
+.products-menu-section__title {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  color: white;
+}
+
