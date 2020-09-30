@@ -1203,6 +1203,13 @@ img {
     transition: color 0.4s 0.3s;
   }
 }
+@media screen and (max-width: 480px) {
+  .products-menu__item.active {
+    flex-shrink: 0;
+    order: 1;
+    width: 100%;
+  }
+}
 
 .products-menu-section__title {
   position: absolute;

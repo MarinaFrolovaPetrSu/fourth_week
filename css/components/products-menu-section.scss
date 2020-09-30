@@ -50,6 +50,11 @@
         transition: color .4s .3s;
       }
     }
+    @include phones {
+      flex-shrink: 0;
+      order: 1;
+      width: 100%;
+    }
   }
 }
 
