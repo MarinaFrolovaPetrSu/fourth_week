@@ -4,7 +4,13 @@ const measureWidth = (item) => {
   const titleBlocks = container.find(".products-menu__title");
   const titleWidth = titleBlocks.width() * titleBlocks.length;
 
-  return screenWidth - titleWidth;
+  const isMob = window.matchMedia("(max-width: 768px)").matches;
+
+  if (isMob) {
+    return screenWidth - titleWidth;
+  } else {
+    return 500;
+  }
 };
 
 const closeEveryItemInContainer = (container) => {

@@ -1205,8 +1205,6 @@ img {
 }
 @media screen and (max-width: 480px) {
   .products-menu__item.active {
-    flex-shrink: 0;
-    order: 1;
     width: 100%;
   }
 }
