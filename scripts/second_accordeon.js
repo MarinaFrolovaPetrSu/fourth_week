@@ -1,23 +1,22 @@
-const measureWidth =() => {
+const measureWidth = () => {
   return 500;
-}
+};
 
-const closeEveryItemInContainer = container => {
-  const items = container.find (".products-menu__item");
-  const content = container.find(".produncts-menu__content");
+const closeEveryItemInContainer = (container) => {
+  const items = container.find(".products-menu__item");
+  const content = container.find("юproducts-menu__content");
 
   items.removeClass("active");
   content.width(0);
-}
+};
 
 const openItm = (item) => {
   const hiddenContent = item.find(".products-menu__content");
   const reqWidth = measureWidth();
 
   item.addClass("active");
-
   hiddenContent.width(reqWidth);
-}
+};
 
 $(".products-menu__title").on("click", (e) => {
   e.preventDefault();
@@ -35,3 +34,8 @@ $(".products-menu__title").on("click", (e) => {
   }
 });
 
+$(".products-menu__close").on("click", (e) => {
+  e.preventDefault();
+
+  closeEveryItemInContainer($('.produts-menu'));
+})
