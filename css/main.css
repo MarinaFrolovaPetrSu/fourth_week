@@ -1235,3 +1235,11 @@ img {
   line-height: 1.8;
   position: relative;
 }
+
+.products-menu__close-img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: #c2c3c4;
+  transition: 0.3s;
+}

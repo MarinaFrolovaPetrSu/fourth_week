@@ -8,17 +8,17 @@ const verticalAccordeon = () => {
     const MAX_WIDTH = 550;
 
     const linksWidth = links[0].offsetWidth;
-    console.log(links);
+    console.log(linksWidth);
 
     const reqWidth = windowWidth - (linksWidth * links.length);
 
     return reqWidth > MAX_WIDTH ? MAX_WIDTH : reqWidth;
   };
 
-  function closeItem(activateElement) {
-    const activeText = activateElement.querySelector(".products-menu__content");
+  function closeItem(activeElement) {
+    const activeText = activeElement.querySelector(".products-menu__content");
     activeText.style.width = "0px";
-    activateElement.classList.remove("active");
+    activeElement.classList.remove("active");
   }
 
   links.forEach(function (elem) {
@@ -28,16 +28,19 @@ const verticalAccordeon = () => {
       const active = document.querySelector(".products-menu__title.active");
       if (active) {
         closeItem(active);
-      }
+      } 
 
       if (!active || active.querySelector(".products-menu__title") !== link) {
         const current = link.closest(".products-menu__item");
         current.classList.add("active");
         const currentText = current.querySelector(".products-menu__content");
         if (body.offsetWidth > 480) {
-          currentText.style.width = calculateWidth() + "px";
+          currentText.style.width = calculateWidth() + 'px';
+
+          widthEl = calculateWidth();
+          console.log(widthEl);
         } else {
-          currentText.style.width = "100%";
+          currentText.style.width = '100%';
         }
       }
     });
@@ -51,7 +54,7 @@ const verticalAccordeon = () => {
     if (!target.closest(".products-menu") && activePerson) {
       closeItem(activePerson);
     }
-    if (target.closest(".products-menu__close")) {
+    if (target.closest(".products-menu__close") && activePerson) {
       closeItem(activePerson);
     }
   });
