@@ -1234,10 +1234,7 @@ img {
   position: relative;
 }
 
-.button.products-menu__close {
-  text-decoration: none;
-  /* fill: white; */
-  /* color: white; */
+.products-menu__close {
   background-color: #3a3c3e;
   border: none;
   margin-top: 4px;
@@ -1247,6 +1244,5 @@ img {
   width: 18px;
   height: 18px;
   display: block;
-  fill: #c2c3c4;
   transition: 0.3s;
 }
