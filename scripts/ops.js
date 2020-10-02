@@ -75,14 +75,12 @@ $("[data-scroll-to]").click((e) => {
 });
 
 $("body").swipe({
-  //Generic swipe handler for all directions
   swipe: function (event, direction) {
-
     const scroller = scrollViewport();
     let scrollDirection = "";
 
     if (direction == "up") scrollDirection = "next";
-    if (direction =="down") scrollDirection = "prev";
+    if (direction == "down") scrollDirection = "prev";
 
     scroller[scrollDirection]();
   },
