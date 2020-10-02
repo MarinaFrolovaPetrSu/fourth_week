@@ -30,7 +30,7 @@
   background: rgba(47, 50, 52, 0.93);
   width: 0;
   height: 100%;
-  position: relative; 
+  position: relative;
   overflow: hidden;
   transition: width 0.4s;
   color: rgba(255, 255, 255, 0);
@@ -40,6 +40,7 @@
   height: 100%;
   visibility: visible;
   display: flex;
+
   &.active {
     .products-menu__content {
       width: rem(550px);
@@ -81,10 +82,11 @@
   position: relative;
 }
 
-.products-menu__close-img {
-  width: 18px;
-  height: 18px;
-  display: block;
-  fill: #c2c3c4;
-  transition: .3s;
+.button.products-menu__close {
+  text-decoration: none;
+  /* fill: white; */
+  /* color: white; */
+  background-color: #3a3c3e;
+  border: none;
+  margin-top: 4px;
 }

@@ -1,4 +1,6 @@
 const measureWidth = (item) => {
+let reqItemWidth = 0;
+
   const screenWidth = $(window).width();
   const container = item.closest(".products-menu");
   const titleBlocks = container.find(".products-menu__title");
@@ -9,7 +11,7 @@ const measureWidth = (item) => {
   if (isMob) {
     return screenWidth - titleWidth;
   } else {
-    return 500;
+    return 550;
   }
 };
 
