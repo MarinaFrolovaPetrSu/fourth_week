@@ -894,6 +894,10 @@ img {
   transform: translate(-50%, -50%);
 }
 
+.fixed-menu--colored {
+  color: #313131;
+}
+
 .hamburger {
   height: 20px;
   width: 24px;

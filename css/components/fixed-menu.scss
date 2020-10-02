@@ -3,6 +3,7 @@
   top: 20%;
   right: 3%;
   z-index: $z-fixed-menu;
+  color:black
 
   @include tablets {
     display: none;
@@ -42,3 +43,6 @@
   }
 }
 
+.fixed-menu--colored {
+  color: #313131;
+}
