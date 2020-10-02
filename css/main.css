@@ -94,6 +94,11 @@ img {
   color: #fff;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   .hero {
     background-position: right bottom 88%;
@@ -337,6 +342,11 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .section {
+    height: 100%;
+  }
 }
 
 .section__title {
@@ -870,7 +880,7 @@ img {
 }
 
 .fixed-menu__item--active .fixed-menu__link {
-  border-color: #fff;
+  border-color: white;
 }
 
 .fixed-menu__link {
@@ -892,10 +902,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.fixed-menu--colored {
-  color: #313131;
 }
 
 .hamburger {

@@ -3,8 +3,7 @@
   top: 20%;
   right: 3%;
   z-index: $z-fixed-menu;
-  color:black
-
+  
   @include tablets {
     display: none;
   }
@@ -17,8 +16,9 @@
 .fixed-menu__item--active {
 
   .fixed-menu__link {
-    border-color:#fff;
+    border-color: white;
   }
+
 }
 
 .fixed-menu__link {
@@ -43,6 +43,3 @@
   }
 }
 
-.fixed-menu--colored {
-  color: #313131;
-}

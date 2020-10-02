@@ -12,7 +12,7 @@ let reqItemWidth = 0;
     return screenWidth - titleWidth;
   } else {
     return 550;
-  }
+  }  
 };
 
 const closeEveryItemInContainer = (container) => {

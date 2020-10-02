@@ -5,6 +5,10 @@
   color: #fff;
   position: relative;
 
+  @include phones {
+    height: 100%;
+  }
+
   @include tablets {
     background-position: right bottom 88%;
   }

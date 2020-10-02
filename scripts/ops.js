@@ -1,4 +1,4 @@
-const sections = $("section");
+const sections = $(".section");
 const display = $(".content");
 
 let inScroll = false;
