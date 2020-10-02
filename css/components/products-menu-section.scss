@@ -76,16 +76,21 @@
 
 .products-menu__content-text {
   font-size: rem(14px);
-  padding: rem(60px) rem(30px);
+  padding: rem(30px);
   width: 100%;
   line-height: 1.8;
   position: relative;
 }
 
 .products-menu__close {
-  background-color: #3a3c3e;
+  padding: 0;
   border: none;
-  margin-top: 4px;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 2%;
+  margin-left: 90%;
 }
 
 .products-menu__close-img {
@@ -94,3 +99,4 @@
   display: block;
   transition: .3s;
 }
+
