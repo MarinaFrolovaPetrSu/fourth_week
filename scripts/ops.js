@@ -77,6 +77,7 @@ $("[data-scroll-to]").click((e) => {
 $("body").swipe({
   swipe: function (event, direction) {
     const scroller = scrollViewport();
+    
     let scrollDirection = "";
 
     if (direction == "up") scrollDirection = "next";
