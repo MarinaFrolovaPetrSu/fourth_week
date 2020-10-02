@@ -64,13 +64,26 @@ $(window).on("keydown", (e) => {
   }
 });
 
-$("[data-scroll-to]").click(e => {
-  e.preventDefault ();
+$("[data-scroll-to]").click((e) => {
+  e.preventDefault();
 
   const $this = $(e.currentTarget);
   const target = $this.attr("data-scroll-to");
   const reqSection = $(`[data-section-id=${target}]`);
-  
-  performScroll(reqSection.index());
 
-})
+  performScroll(reqSection.index());
+});
+
+$("body").swipe({
+  //Generic swipe handler for all directions
+  swipe: function (event, direction) {
+
+    const scroller = scrollViewport();
+    let scrollDirection = "";
+
+    if (direction == "up") scrollDirection = "next";
+    if (direction =="down") scrollDirection = "prev";
+
+    scroller[scrollDirection]();
+  },
+});
