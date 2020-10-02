@@ -44,3 +44,25 @@ $(window).on("wheel", function (e) {
     scrollViewport("prev");
   }
 });
+$(window).on("keydown", function (e) {
+  var tagName = e.target.tagName.toLowerCase();
+
+  if (tagName !== "input" && tagName !== "textarea") {
+    switch (e.keyCode) {
+      case 38:
+        scrollViewport("prev");
+        break;
+
+      case 40:
+        scrollViewport("next");
+        break;
+    }
+  }
+});
+$("[data-scroll-to]").click(function (e) {
+  e.preventDefault();
+  var $this = $(e.currentTarget);
+  var target = $this.attr("data-scroll-to");
+  var reqSection = $("[data-section-id=".concat(target, "]"));
+  performScroll(reqSection.index());
+});
