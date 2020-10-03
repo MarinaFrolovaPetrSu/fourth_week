@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <script>
+    const mixedArray = [3, 13, 74, 14, 66, 15, 22, 4];
+    const isEven = [];
+
+    function filterArray(mixedArray) {
+      for (var i in mixedArray) {
+        if (mixedArray[i] % 2 == 0) {
+          isEven.push(mixedArray[i]);
+        }
+      }
+      alert(isEven);
+    }
+
+    console.log(filterArray(mixedArray));
+  </script>
+</body>
+
+</html>

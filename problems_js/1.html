@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <script>
+    const string = "Привет! Как дела?";
+
+    function getVowels(string) {
+      string = string.replace(/[^аеёиоуыэюя]/ig, '');
+      alert(string);
+    }
+    console.log(getVowels(string));
+  </script>
+</body>
+
+</html>

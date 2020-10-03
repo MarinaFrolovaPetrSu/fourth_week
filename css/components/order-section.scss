@@ -1,0 +1,33 @@
+.order-section {
+  background: url("../img/icons/order_sec.svg") no-repeat;
+  background-size: cover;
+
+  &:before {
+    background-image: url("../img/decor/backberries.png");
+    right: 0;
+    bottom: 20%;
+  }
+
+  /*&:after {
+    content: url("../img/icons/one-berry.svg");
+    position: absolute;
+    left: 10%;
+    bottom: 18%;
+
+    @include tablets {
+      display: none;
+    }
+  }*/
+}
+
+.container__image {
+  position: absolute;
+  right: 0;
+  margin-top: -8%;
+
+  @include phones {
+    margin-top: -30%;
+    width: 23%;
+    height: 23%;
+  }
+}
