@@ -1,13 +1,9 @@
 .section {
   height: 100vh;
-  /*min-height: rem(750px);*/
+ /* min-height: rem(750px);*/
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-   @include phones {
-    height: 100%;
-  }
 }
 
 .section__title {

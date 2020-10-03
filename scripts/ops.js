@@ -64,7 +64,7 @@ $(window).on("keydown", (e) => {
   }
 });
 
-$("[data-scroll-to]").click((e) => {
+$("data-scroll-to").click((e) => {
   e.preventDefault();
 
   const $this = $(e.currentTarget);
@@ -74,15 +74,15 @@ $("[data-scroll-to]").click((e) => {
   performScroll(reqSection.index());
 });
 
+
 $("body").swipe({
   swipe: function (event, direction) {
-    const scroller = scrollViewport();
-    
+    const scroll = scrollViewport();
     let scrollDirection = "";
 
     if (direction == "up") scrollDirection = "next";
     if (direction == "down") scrollDirection = "prev";
 
-    scroller[scrollDirection]();
+    scroll[scrollDirection]();
   },
 });

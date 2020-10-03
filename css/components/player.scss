@@ -1,8 +1,9 @@
 .player {
   position: relative;
   display: block;
-  width: 100%;
+  width: 85%;
   height: 100%;
+  background-color: #F8FAF9;
 }
 
 .player__splash {
@@ -29,5 +30,11 @@
 }
 
 .player__wrapper {
-  height: 60vh;
+  height: 70vh;
 }
+
+.player-section__container {
+  display: flex;
+  justify-content: center;
+}
+

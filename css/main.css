@@ -338,15 +338,10 @@ img {
 
 .section {
   height: 100vh;
-  /*min-height: rem(750px);*/
+  /* min-height: rem(750px);*/
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-@media screen and (max-width: 480px) {
-  .section {
-    height: 100%;
-  }
 }
 
 .section__title {
@@ -1271,8 +1266,9 @@ img {
 .player {
   position: relative;
   display: block;
-  width: 100%;
+  width: 85%;
   height: 100%;
+  background-color: #F8FAF9;
 }
 
 .player__splash {
@@ -1299,5 +1295,10 @@ img {
 }
 
 .player__wrapper {
-  height: 60vh;
+  height: 70vh;
+}
+
+.player-section__container {
+  display: flex;
+  justify-content: center;
 }
